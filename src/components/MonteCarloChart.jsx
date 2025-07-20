@@ -41,7 +41,7 @@ export default function MonteCarloChart({ data }) {
             return `${month}-${day}`;
           }}
         />
-        <YAxis />
+        <YAxis tickFormatter={(value) => `$${value}`} />
         <Tooltip content={<CustomTooltip />} />
         <Legend />
         <Area type="linear" dataKey="p5" stroke="none" fill="transparent" stackId="range" />
