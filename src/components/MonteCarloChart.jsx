@@ -29,7 +29,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 
 export default function MonteCarloChart({ data }) {
   return (
-    <ResponsiveContainer width="80%" height={400}>
+    <ResponsiveContainer width="90%" height={400}>
       <AreaChart data={data}>
         <CartesianGrid stroke="#ccc" />
         <XAxis 

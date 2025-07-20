@@ -2,7 +2,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContaine
 
 export default function MonteCarloHistogram ({ data }) {
     return (
-        <ResponsiveContainer width="80%" height={400}>
+        <ResponsiveContainer width="90%" height={400}>
             <BarChart 
                 data={data}
                 margin={{ bottom: 10, left: 1 }}

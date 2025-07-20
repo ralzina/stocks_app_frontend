@@ -8,7 +8,7 @@ const TimeSeriesLineChart = ({ data }) => {
     console.log("Chart data:", data);
 
     return (
-        <ResponsiveContainer width="80%" height={400}>
+        <ResponsiveContainer width="90%" height={400}>
             <LineChart data={data}>
                 <CartesianGrid stroke="#ccc" />
                 <XAxis 

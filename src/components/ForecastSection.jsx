@@ -32,7 +32,7 @@ export default function ForecastSection({ forecastRef }){
     };
     return (
         <section ref={forecastRef} className="min-h-screen pt-30 px-4 sm:px-6 bg-white">
-            <h1 className="text-3xl font-light text-gray-700 mb-8 ml-20">Stock Predictor</h1>
+            <h1 className="text-3xl font-light text-gray-700 mb-8 ml-2 sm:ml-20">Stock Predictor</h1>
 
             <div className="flex flex-row sm:flex-col justify-center items-center gap-4 sm:gap-0 mr-20 sm:mr-0 ">
                 <div className="flex flex-col sm:flex-row gap-0 sm:items-center items-center">
@@ -81,7 +81,7 @@ export default function ForecastSection({ forecastRef }){
             {error && <p className="text-center text-red-500 mt-15">{error}</p>}
 
             {result && (
-                <div className="mt-10 mx-20">
+                <div className="mt-10 mx-0 sm:mx-20">
                     <h1 className="text-3xl font-light text-gray-700">Results for {fetchedTicker}</h1>
 
                     <h2 className="text-2xl font-light text-gray-700 mt-8">Time Series</h2>
