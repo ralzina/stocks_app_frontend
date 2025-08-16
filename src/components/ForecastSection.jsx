@@ -105,12 +105,16 @@ export default function ForecastSection({ forecastRef }){
                     <h2 className="text-2xl font-light text-gray-700 mt-8">Decision Tree</h2>
 
                     <p className="font-light text-gray-700 mt-3">Decision Tree Accuracy: {(100 * result.dt_accuracy).toFixed(2)}%</p>
-                    <p className="font-light text-gray-700 mt-3 pb-20">Decision Tree Recommendation: {
+                    <p className="font-light text-gray-700 mt-3">Decision Tree Recommendation: {
                         result.dt_prediction === 1 ? 'Buy' :
                         result.dt_prediction === 0 ? 'Hold' :
                         result.dt_prediction === -1 ? 'Sell' :
                         'N/A'
                     }</p>
+
+                    <h2 className="text-2xl font-light text-gray-700 mt-8">Groq AI Summary</h2>
+                    <p className="font-light text-gray-700 mt-3 pb-20">{result.summary}</p>
+
                 </div>
             )}
         </section>
